@@ -1,30 +1,85 @@
-# Telecom Growth Analysis For TellCo Company
+# TellCo-Telecom-Analysis
 
-## Project Description
+Project Overview
 
-This repository contains telecom analysis for TellCo, a mobile service provider in Pefkakia. Analyzes dataset, uncovers growth opportunities, and provides a recommendation on acquisition/divestiture. Includes comprehensive report and interactive web-based dashboard.
+This project involves a comprehensive analysis of TellCo, an existing mobile service provider in the Republic of Pefkakia. The analysis is being conducted for a potential investor to determine whether TellCo is a viable acquisition target. The project encompasses user overview analysis, user engagement analysis, experience analytics, and user satisfaction analysis.
+nOTE: This project is part of 10 academy's KAIM2 training week 2 challenge
 
-## Situational Overview (Business Need)
+## Business Objective
 
-You are working for a wealthy investor that specialises in purchasing assets that are undervalued. This investor’s due diligence on all purchases includes a detailed analysis of the data that underlies the business, to try to understand the fundamentals of the business and especially to identify opportunities to drive profitability by changing the focus of which products or services are being offered.
+To analyze opportunities for growth and make a recommendation on whether TellCo is worth buying or selling. This will be achieved by analyzing a telecommunication dataset containing information about customers and their activities on the network.
 
-Your last role with this investor saw you do a rich analysis of a delivery company and you helped to identify that delivery to university students was the most profitable route to follow, and your analysis helped the investor purchase this delivery company and ramp up profits by 25% within 6 months through focussing on the most profitable aspect of the business. This was driven by university students always being hungry, awake at all hours, willing to purchase from a limited food menu, and tending to live within a small geographical area.
 
-The investor is interested in purchasing TellCo, an existing mobile service provider in the Republic of Pefkakia. TellCo’s current owners have been willing to share their financial information but have never employed anyone to look at the data that is generated automatically by their systems.
+## Project Structure
 
-## Approach
+```plaintext
 
-The project is divided and implemented by the following phases
-
-1. User Overview analysis
-2. User Engagement analysis
-3. User Experience analysis
-4. User Satisfaction analysis
-
-## Installation guide
-
+TellCo-Telecom-Analysis/
+├── .vscode/
+│   └── settings.json
+├── .github/
+│   └── workflows/
+│       └── unittests.yml   # GitHub Actions
+├── .gitignore              # files and folders to be ignored by git
+├── requirements.txt        # contains dependencies for the project
+├── README.md               # Documentation for the projects
+├── src/
+│   └── __init__.py
+├── notebooks/
+│   ├── __init__.py
+|   |──data_preprocessing.ipynb         # Jupyter notebook for data cleaning and processing 
+|   ├── User_Overview_Analysis.ipynb    # Jupyter notebook for user overview analysis 
+|   ├── User_Engagement_Analysis.ipynb  # Jupyter notebook for user engagement analysis
+|   ├── experience_analytics.ipynb      # Jupyter notebook for user experience analysis
+|   |── Satisfaction_Analysis.ipynb     # Jupyter notebook for user satisfaction analysis
+│   └── README.md                       # Description of notebooks directory 
+├── tests/
+│   └── __init__.py
+└── scripts/
+    ├── __init__.py
+    ├── database_connection.py      # script for loading the dummy data from database
+    ├── data_processing.py          # Script data processing, cleaning and user overview analysis s
+    ├── user_engagement.py          # script for user engagement analysis   
+    ├── experience_analytics.py     # script for user experience analysis 
+    |──  satisfaction_analysis.py   # script for user satisfaction analysis 
+    └── README.md                   # Description of scripts directory
+    
 ```
-git clone https://github.com/senaygui/telecom_growth_analysis.git
-cd telecom-growth-analysis
-pip install -r requirements.txt
-```
+## Setup
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/OL-YAD/TellCo-Telecom-Data-Analysis.git
+   cd TellCo-Telecom-Data-Analysis
+   ```
+
+2. Create a virtual environment (optional but recommended):
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
+
+3. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+## Running the Streamlit App
+
+To run the Streamlit app locally:
+
+1. Ensure you're in the project directory and your virtual environment is activated (if you're using one).
+
+2. Run the following command:
+   ```
+   streamlit run app.py
+   ```
+
+## Data Sources
+
+- Tellco Data Channel (XDR) Records- Contains information about user sessions, traffic data, and engagement    metrics.
+
+
+## Contact
+
+For any questions or feedback, please open an issue on this GitHub repository.
